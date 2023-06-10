@@ -1,6 +1,6 @@
 /*
 
-take interger an argument and count the digit.
+take integer an argument and count the digit.
 
 */
 
