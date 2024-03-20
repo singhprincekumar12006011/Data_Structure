@@ -1,10 +1,9 @@
-public class selectionSort2 {
-
-    public static void selectionSort(int arr[], int n)
+public class selectionSort4 {
+    static void fun(int arr[], int n)
     {
         for(int i=0; i<n; i++)
         {
-            int min = i;
+            int min=i;
             for(int j=i+1; j<n; j++)
             {
                 if(arr[j] < arr[min])
@@ -17,16 +16,14 @@ public class selectionSort2 {
             arr[min] = temp;
         }
     }
-    public static void main(String[] Prince)
+    public static void main(String[] args)
     {
-        int arr[] = {10,19,3,9,8,20,5};
-        int n=arr.length;
-
-        //calling the function
-        selectionSort(arr, n);
+        int arr[] = {10,2,4,6,3,8,9,1};
+        int n = arr.length;
+        fun(arr, n);
         for(int i:arr)
         {
-            System.out.print(i + " ");
+            System.out.print(i+" ");
         }
     }
 }
